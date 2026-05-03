@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --card: #1e293b;
+    --primary: #3b82f6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--text);
+}
+
+.card {
+    background: var(--card);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+h1 { margin-bottom: 1rem; color: #fff; font-weight: 800; font-size: 2.5rem; }
+h2 { margin: 2rem 0 1rem; color: var(--primary); font-size: 1.5rem; }
+p { margin-bottom: 1rem; color: var(--text-muted); }
+ul { margin-bottom: 1rem; padding-left: 2rem; color: var(--text-muted); }
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 3rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
